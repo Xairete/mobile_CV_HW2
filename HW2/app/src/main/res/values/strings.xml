@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HW2</string>
+    <string-array name="Detector">
+        <item>MobileNet</item>
+        <item>ResNet</item>
+    </string-array>
+</resources>

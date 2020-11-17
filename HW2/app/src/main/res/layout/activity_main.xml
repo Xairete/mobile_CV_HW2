@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Detector" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        android:text="Choose photos"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clusterize_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        android:text="Find clusters"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/prev_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Prev" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
